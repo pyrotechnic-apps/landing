@@ -3,7 +3,7 @@
 @font-face {
 	font-family: 'icomoon';
 	src:url('../fonts/icomoon.eot');
-	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+	src:url('../fonts/icomoon.eot') format('embedded-opentype'),
 		url('../fonts/icomoon.woff') format('woff'),
 		url('../fonts/icomoon.ttf') format('truetype'),
 		url('../fonts/icomoon.svg#icomoon') format('svg');
@@ -54,32 +54,42 @@ a:hover {
 
 .bl-main > section {
 	position: absolute;
-	width: 50%;
+        left:0;
+        width: 50%;
 	height: 50%;
 }
+.bl-content::-webkit-scrollbar {
+ display: none;
+ width: 0 !important;
+}
+
+.bl-content {
+ overflow: -moz-scrollbars-none;
+ -ms-overflow-style: none;
+ }
 
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: #1AA7CB; /*#F06060; */
+	background:#1AA7CB; /* #5ADDF2; #1AA7CB; #F06060; */
 }
 
 .bl-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: #FA987D;
+	background: #FF9500; /*  #FA987D; */
 }
 
 .bl-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: #72CCA7;
+	background:#FF888E;; /* #FF3824;  #FEE54E; #72CCA7; */
 }
 
 .bl-main > section:nth-child(4) {
 	top: 50%;
 	left: 50%;
-	background: #10A296;
+	background: #10A296;/* #79DFA2; #10A296;*/
 }
 
 .bl-box {
@@ -137,7 +147,7 @@ a:hover {
 
 .bl-icon:before {
 	display: block;
-	font-size: 2em;
+	font-size: 4em;
 	margin-bottom: 10px;
 }
 
@@ -157,7 +167,7 @@ a:hover {
 	content: "\e003";
 }
 
-.bl-main > section .bl-icon-close {
+.bl-main > section .bl-icon-cancel-circle {
 	position: absolute;
 	top: 20px;
 	right: 20px;
@@ -165,13 +175,15 @@ a:hover {
 	z-index: 100;
 	opacity: 0;
 	pointer-events: none;
+        font-size:0.5em;
 }
 
-.bl-icon-close:before {
+bl-icon-cancel-circle:before {
 	content: "\e005";
+	font-size: 2em;
 }
 
-.bl-content, 
+.bl-content,
 div.bl-panel-items > div > div {
 	opacity: 0;
 	pointer-events: none;
@@ -221,7 +233,7 @@ div.bl-panel-items > div > div {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-} 
+}
 
 .bl-content > ul li {
 	display: inline-block;
@@ -375,13 +387,13 @@ div.bl-panel-items > div.bl-hide-current-work {
 	background: #1AA7CB; /* #EE4444; */
 }
 .bl-main > section:nth-child(2).bl-expand {
-	background: #F98262;
+	background: #FF9500; /* #F98262; */
 }
 .bl-main > section:nth-child(3).bl-expand {
-	background: #4BBE8E;
+	background:#FF888E; /* #4BBE8E; */
 }
 .bl-main > section:nth-child(4).bl-expand {
-	background: #0D8278;
+	background: #10A296; /*#0D8278;*/
 }
 
 .bl-main.bl-expand-item > section:not(.bl-expand),
@@ -420,14 +432,15 @@ section.bl-expand .bl-box {
 }
 
 .bl-content,
-.bl-icon-close {
+.bl-icon-close, .bl-icon-cancel-circle {
 	-webkit-transition: opacity 0.1s linear 0s;
 	-moz-transition: opacity 0.1s linear 0s;
 	transition: opacity 0.1s linear 0s;
-}
+
+      }
 
 section.bl-expand .bl-content,
-section.bl-expand .bl-icon-close {
+section.bl-expand .bl-icon-cancel-circle {
 	pointer-events: auto;
 	opacity: 1;
 	-webkit-transition: opacity 0.3s linear 0.5s;
@@ -449,3 +462,4 @@ section.bl-expand .bl-icon-close {
 		width: 40%;
 	}
 }
+
