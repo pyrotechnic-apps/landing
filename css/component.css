@@ -58,6 +58,8 @@ a:hover {
         width: 50%;
 	height: 50%;
 }
+
+/*
 .bl-content::-webkit-scrollbar {
  display: none;
  width: 0 !important;
@@ -67,6 +69,7 @@ a:hover {
  overflow: -moz-scrollbars-none;
  -ms-overflow-style: none;
  }
+*/
 
 .bl-main > section:first-child {
 	top: 0;
@@ -77,13 +80,13 @@ a:hover {
 .bl-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: #FF9500; /*  #FA987D; */
+	background:#FF9500; /*  #FA987D; */
 }
 
 .bl-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background:#FF888E;; /* #FF3824;  #FEE54E; #72CCA7; */
+	background:#FF888E; /* #FF3824;  #FEE54E; #72CCA7; */
 }
 
 .bl-main > section:nth-child(4) {
@@ -177,7 +180,7 @@ a:hover {
 	pointer-events: none;
 }
 
-bl-icon-cancel-circle:before {
+.bl-icon-cancel-circle:before {
 	content: "\e005";
 	font-size: 2em;
 }

@@ -1,6 +1,7 @@
+
 #tech p>img {
 padding: 30px;
-background-color: rgba(255,255,255,0.05);
+/* background-color: rgba(255,255,255,0.05); */
 /* border:1px solid #ccc; */
 
 }
@@ -8,7 +9,7 @@ background-color: rgba(255,255,255,0.05);
 #workapps a>img
 {
 padding: 30px;
-background-color: rgba(255,255,255,0.2);
+/* background-color: rgba(255,255,255,0.2); */
 height: 150px;
 }
 
@@ -20,8 +21,55 @@ li,ul {
 
 }
 
+
+
 .bl-icon-cancel-circle:before {
 font-size: 2em;
 
+}
+
+ul#bl-work-items {
+    padding:0px;
+}
+
+@media screen and (max-width: 46.5em) {
+
+    img#logohome {
+        width: auto;
+        height:20px;
+    }
+/*
+    .bl-content > ul li a img {
+        display: block;
+        max-width: 100%;
+    }
+*/
+
+    #workapps a>img
+    {
+        padding: 10px;
+        padding-left: 0px;
+        height: auto;
+        width: 200px;
+    }
+/*
+    ul#bl-work-items img {
+        width: auto !important;
+        display: block;
+
+    }
+*/
+
+    #tech p>img {
+        display:block
+        padding: 10px;
+        height: auto;
+        width: 200px;
+    }
+    
+    #pyromap {
+        width: 100%;
+        height: auto;
+    }
 }
 
