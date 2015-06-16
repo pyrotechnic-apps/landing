@@ -266,12 +266,16 @@ div.bl-panel-items > div {
 }
 
 div.bl-panel-items > div > div {
-	width: 75%;
+	width: 95%;
 	margin: 0 auto;
 	opacity: 1;
 	bottom: 90px;
 	top: 90px;
 	pointer-events: auto;
+}
+
+div.bl-panel-items > div > div > img {
+	display:block;
 }
 
 div.bl-panel-items > div > div h3 {
