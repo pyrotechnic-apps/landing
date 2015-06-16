@@ -274,9 +274,6 @@ div.bl-panel-items > div > div {
 	pointer-events: auto;
 }
 
-div.bl-panel-items > div > div > img {
-	display:block;
-}
 
 div.bl-panel-items > div > div h3 {
 	font-size: 2.4em;
@@ -300,7 +297,7 @@ div.bl-panel-items {
 }
 
 div.bl-panel-items > div {
-	background: #3ba5db;
+	background: transparent; /* #3ba5db; */
 	z-index: 0;
 	opacity: 0;
 	-webkit-transform: translateY(0);
@@ -323,6 +320,7 @@ div.bl-panel-items nav {
 	-webkit-transition: opacity 0.2s ease-in-out 0.5s;
 	-moz-transition: opacity 0.2s ease-in-out 0.5s;
 	transition: opacity 0.2s ease-in-out 0.5s;
+	color: #1AA7CB;
 }
 
 div.bl-panel-items.bl-panel-items-show nav span {
@@ -338,6 +336,7 @@ div.bl-panel-items nav span.bl-next-work {
 	line-height: 2em;
 	cursor: pointer;
 	margin-right: 2em;
+	color: #1AA7CB;
 }
 
 div.bl-panel-items.bl-panel-items-show nav {

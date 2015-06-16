@@ -32,7 +32,21 @@ li,ul {
 }
 
 
+#voogo {
+background: white;
+    color: #333333;
 
+}
+
+#blocks {
+    background: #ffead3;
+    color: #333333;
+}
+
+#ventus {
+    background: #222222;
+    color:#f0f0f0;
+}
 .bl-icon-cancel-circle:before {
 font-size: 2em;
 
