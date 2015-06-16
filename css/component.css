@@ -23,7 +23,7 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%;}
 
 body {
     font-family: 'Lato', Arial, sans-serif;
-    color: #f2ede3;
+    color: whitesmoke; /* #f2ede3; */
     background: #333;
     font-size: 0.9em;
     font-weight: 300;
@@ -59,7 +59,7 @@ a:hover {
 	height: 50%;
 }
 
-/*
+
 .bl-content::-webkit-scrollbar {
  display: none;
  width: 0 !important;
@@ -69,7 +69,7 @@ a:hover {
  overflow: -moz-scrollbars-none;
  -ms-overflow-style: none;
  }
-*/
+
 
 .bl-main > section:first-child {
 	top: 0;
