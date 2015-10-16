@@ -2,7 +2,7 @@
 a {
 	
 	text-decoration: none!important;
-	background-color: rgba(0, 0, 0, 0.1);!important;
+	background-color: rgba(0, 0, 0, 0.1)!important;
 	/* text-transform: uppercase; */
 	-webkit-transition: -webkit-transform 0.3s;
 	-moz-transition: -moz-transform 0.3s;
@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-	background-color: rgba(4, 7, 4, 0.3);!important;
+	background-color: rgba(4, 7, 4, 0.3)!important;
 	text-decoration:none!important;
 	 -webkit-transition: background-color 250ms linear;
     -moz-transition: background-color 250ms linear;
@@ -186,7 +186,7 @@ color:rgba(0,0,0,0.5)!important;
 */
 
     #tech p>img {
-        display:block
+        display:block;
         padding: 10px;
         height: auto;
         width: 200px;
