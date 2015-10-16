@@ -16,7 +16,7 @@ var Boxlayout = (function() {
 		// if currently navigating the work items
 		isAnimating = false,
 		// close work panel trigger
-		$closeWorkItem = $workPanelsContainer.find( 'nav > span.bl-icon-cancel-circle' ),
+		$closeWorkItem = $workPanelsContainer.find( 'nav > span.bl-icon-home3' ),
 		transEndEventNames = {
 			'WebkitTransition' : 'webkitTransitionEnd',
 			'MozTransition' : 'transitionend',
@@ -47,7 +47,7 @@ var Boxlayout = (function() {
 					$el.addClass( 'bl-expand-item' );
 				}
 
-			} ).find( 'span.bl-icon-cancel-circle' ).on( 'click', function() {
+			} ).find( 'span.bl-icon-home3' ).on( 'click', function() {
 
 				// close the expanded section and scale up the others
 				$section.data( 'open', false ).removeClass( 'bl-expand' ).on( transEndEventName, function( event ) {
