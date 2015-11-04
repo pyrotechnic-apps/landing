@@ -19,7 +19,7 @@ a:hover {
 }
 
 div {
-    overflow-y: visible; 
+    overflow-y: scroll; 
    -webkit-overflow-scrolling: touch; 
    -ms-overflow-style:none;
 }
