@@ -19,9 +19,9 @@ a:hover {
 }
 
 div {
-    overflow-y: scroll; 
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style:none;
+    /*overflow-y: scroll; */
+   -webkit-overflow-scrolling: touch; 
+   -ms-overflow-style:none;
 }
 
 div::-webkit-scrollbar {
