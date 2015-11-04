@@ -1,6 +1,5 @@
 
 a {
-	
 	text-decoration: none!important;
 	background-color: rgba(0, 0, 0, 0.1)!important;
 	/* text-transform: uppercase; */
@@ -21,11 +20,18 @@ a:hover {
 
 div {
     overflow-y: scroll; 
-  -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style:none;
+    overflow: hidden;
 }
+
+div::-webkit-scrollbar {
+    display: none;
+}
+
 h1, h2, h3 {
-font-weight:bold;
-text-align:center!important;
+    font-weight:bold;
+    text-align:center!important;
 }
 
 h1 {
@@ -47,6 +53,7 @@ h3, h4 {
 b {
 color: rgba(255, 255, 255, 0.8); /* #f2ede3; */
 }
+
 blockquote {
     font-size: 100%;
     font-style: italic;
